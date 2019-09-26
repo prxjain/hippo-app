@@ -17,7 +17,7 @@ pipeline {
                 script {
                     app = docker.build("a2zram/hippo2")
                     app.inside {
-                        sh 'echo $(curl localhost:8080)'
+                        sh 'echo $(curl localhost:7070)'
                     }
                 }
             }
